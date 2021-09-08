@@ -1,5 +1,5 @@
 {
-  "name": "react-in-angular",
+  "name": "react-inside-angular",
   "version": "0.0.1",
   "description": "This package is built to allow it to be easy to build and use react components inside angular.",
   "main": "./lib/cjs/index.js",
@@ -23,12 +23,16 @@
     "lib/**/*"
   ],
   "peerDependencies": {
+    "rxjs": "^6.4",
+    "@angular/common": "9.x",
     "@angular/core": "^9.x",
     "@angular/router": "^9.x"
   },
   "devDependencies": {
-    "@angular/core": "^9.1.13",
-    "@angular/router": "^9.1.13",
+    "rxjs": "^6.4",
+    "@angular/common": "9.x",
+    "@angular/core": "^9.x",
+    "@angular/router": "^9.x",
     "@types/jest": "^26.0.20",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
