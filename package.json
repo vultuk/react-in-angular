@@ -1,6 +1,6 @@
 {
   "name": "react-inside-angular",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This package is built to allow it to be easy to build and use react components inside angular.",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
