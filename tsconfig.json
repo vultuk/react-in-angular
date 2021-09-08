@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2015",
+    "jsx": "react-jsx",
     "module": "es2015",
     "declaration": true,
     "sourceMap": true,
@@ -8,7 +9,8 @@
     "strict": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "experimentalDecorators": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/*.test.ts", "src/TestValues"]
