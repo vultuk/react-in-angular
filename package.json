@@ -25,7 +25,9 @@
     "rxjs": "^6.4",
     "@angular/common": "9.x",
     "@angular/core": "^9.x",
-    "@angular/router": "^9.x"
+    "@angular/router": "^9.x",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9"
   },
   "devDependencies": {
     "rxjs": "^6.4",
