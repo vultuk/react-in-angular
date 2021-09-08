@@ -1,3 +1,3 @@
-import { default as ReactModule } from 'react';
+import ReactModule from 'react';
 
 export default ReactModule;
