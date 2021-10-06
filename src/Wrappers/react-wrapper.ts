@@ -1,10 +1,21 @@
-import { OnChanges, AfterViewInit, Directive, ElementRef } from '@angular/core';
+import { OnChanges, AfterViewInit } from '@angular/core';
 import { React, ReactDOM } from '../';
-import { Router } from '@angular/router';
 import { LinkProps } from '../Components/LinkWrapper';
 
-@Directive()
+export type RouterWrapper = {
+  navigateByUrl: (url: string) => Promise<void>
+}
+
+export type ElementRefWrapper = {
+  nativeElement: {
+    tagName: string;
+  }
+}
+
 export abstract class ReactWrapper<P> implements OnChanges, AfterViewInit {
+  protected abstract router: RouterWrapper;
+  protected abstract elemRef: ElementRefWrapper;
+
   public abstract setProps(): P;
 
   public abstract setComponent():
@@ -20,8 +31,6 @@ export abstract class ReactWrapper<P> implements OnChanges, AfterViewInit {
   }
 
   private hasViewLoaded = false;
-
-  constructor(protected router: Router, protected elemRef: ElementRef) {}
 
   /**
    * If anything has been changed, then re-render the component
