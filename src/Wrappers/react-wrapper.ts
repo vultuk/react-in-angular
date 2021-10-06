@@ -1,5 +1,6 @@
 import { OnChanges, AfterViewInit } from '@angular/core';
-import { React, ReactDOM } from '../';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import { LinkProps } from '../Components/LinkWrapper';
 
 export type RouterWrapper = {

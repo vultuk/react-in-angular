@@ -1,4 +1,4 @@
-import { React } from '../';
+import React from 'react';
 
 type ExternalLinkWrapperProps = {
   Navigate?: (url: string) => void;
