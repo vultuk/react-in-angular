@@ -3,14 +3,14 @@ import { React, ReactDOM } from '../';
 import { LinkProps } from '../Components/LinkWrapper';
 
 export type RouterWrapper = {
-  navigateByUrl: (url: string) => Promise<void>
-}
+  navigateByUrl: (url: string) => Promise<void>;
+};
 
 export type ElementRefWrapper = {
   nativeElement: {
     tagName: string;
-  }
-}
+  };
+};
 
 export abstract class ReactWrapper<P> implements OnChanges, AfterViewInit {
   protected abstract router: RouterWrapper;
