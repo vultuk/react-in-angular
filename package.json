@@ -24,7 +24,7 @@
   "peerDependencies": {
     "rxjs": "^6.4",
     "@angular/common": "9.x",
-    "@angular/core": "^9.x",
+    "@angular/core": "^11.x",
     "@angular/router": "^9.x",
     "@types/react": "^16.14",
     "@types/react-dom": "^16.14",
@@ -34,7 +34,7 @@
   "devDependencies": {
     "rxjs": "^6.4",
     "@angular/common": "9.x",
-    "@angular/core": "^9.x",
+    "@angular/core": "^11.x",
     "@angular/router": "^9.x",
     "@types/jest": "^26.0.20",
     "@types/react": "^16.14",
